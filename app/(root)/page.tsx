@@ -1,6 +1,7 @@
 import AddDocumentBtn from '@/components/AddDocumentBtn';
 import Header from '@/components/Header'
 import { Button } from '@/components/ui/button'
+import { getDocuments } from '@/lib/actions/room.actions';
 // import { DeleteModal } from '@/components/DeleteModal';
 // import Notifications from '@/components/Notifications';
 // import { getDocuments } from '@/lib/actions/room.actions';
@@ -17,8 +18,7 @@ const Home = async () => {
   const clerkUser = await currentUser();
   if(!clerkUser) redirect('/sign-in');
 
-  const documents = [];
-  // const roomDocuments = await getDocuments(clerkUser.emailAddresses[0].emailAddress);
+  const roomDocuments = await getDocuments(clerkUser.emailAddresses[0].emailAddress);
 
   return (
     <main className="home-container">
@@ -32,7 +32,7 @@ const Home = async () => {
         </div>
       </Header>
 
-      {/* {roomDocuments.data.length > 0 ? (
+      {roomDocuments.data.length > 0 ? (
         <div className="document-list-container">
           <div className="document-list-title">
             <h3 className="text-28-semibold">All documents</h3>
@@ -58,15 +58,10 @@ const Home = async () => {
                     <p className="text-sm font-light text-blue-100">Created about {dateConverter(createdAt)}</p>
                   </div>
                 </Link>
-                <DeleteModal roomId={id} />
+                {/* <DeleteModal roomId={id} /> */}
               </li>
             ))}
           </ul>
-        </div>
-      ) */}
-      {documents.length > 0 ? (
-        <div>
-
         </div>
       ):(
         <div className='document-list-empty'>
