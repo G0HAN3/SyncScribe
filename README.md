@@ -1,5 +1,5 @@
 # SyncScribe
-![SyncScribe](/Homess.png)
+![SyncScribe](https://github.com/G0HAN3/SyncScribe/blob/master/Homess.PNG)
 
 ### 🌟 Real-time Document Editor
 ### 🚀 Empower Collaboration, elevate creativity, ignite productivity.
