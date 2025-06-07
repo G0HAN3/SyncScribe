@@ -11,7 +11,7 @@ const Header = ({ children, className }: HeaderProps) => {
           alt="Logo with name"
           width={187.5}
           height={50}
-          // width={120}
+          // width={120} 
           // height={32}
           className="hidden md:block"
         />
