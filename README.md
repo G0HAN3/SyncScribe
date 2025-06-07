@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SyncScribe
+![SyncScribe](/Homess.png)
 
-## Getting Started
+### 🌟 Real-time Document Editor
+### 🚀 Empower Collaboration, elevate creativity, ignite productivity.
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A screen sharing application that allows a user to share screen with multiple other users.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+It is made using Html, Css, Js, NodeJs, Express, Electron and Socket.io.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+## To run this Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Open Terminal :
 
-## Learn More
+    • cd server
+    • node index.js
 
-To learn more about Next.js, take a look at the following resources:
+#### Another Parallel Terminal: 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    • cd client
+    • npm start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Electron App will start : click Start Share and copy Room ID
 
-## Deploy on Vercel
+#### Open http://192.168.0.115:5000 on the device you want to view the shared screen on.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Change ip and url according to ur ip :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    • To get ur signals ip, open terminal and enter ipconfig
+    • Update ip in line 5  in app.js   (client)
+    • Update ip in line 26 in index.js (server)
+
+### SCREEN SHARING STARTED!!
+
+
